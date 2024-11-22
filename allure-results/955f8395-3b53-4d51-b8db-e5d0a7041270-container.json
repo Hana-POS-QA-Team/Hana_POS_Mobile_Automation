@@ -1,0 +1,1 @@
+{"uuid":"955f8395-3b53-4d51-b8db-e5d0a7041270","name":"ParallelSuite","children":["b6223515-e6bd-4b58-9702-f3d20e33a2be"],"befores":[{"name":"SuiteBeforeMethods","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1732277883700,"stop":1732277909900}],"afters":[],"start":1732277883676,"stop":1732277927887}
