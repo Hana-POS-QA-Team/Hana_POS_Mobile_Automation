@@ -10,9 +10,8 @@ import java.util.List;
 
 public class SearchResultPage extends TestBaseClass {
 
-    public SearchResultPage(AppiumDriver driver){
-        this.driver = driver;
-        PageFactory.initElements(driver,this);
+    public SearchResultPage() {
+        PageFactory.initElements(getDriver(),this);
     }
 
     @FindBy(xpath = "//a[@class='product-name']")
