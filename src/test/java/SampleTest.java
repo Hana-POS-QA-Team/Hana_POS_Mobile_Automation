@@ -27,7 +27,7 @@ public class SampleTest extends TestBaseClass {
         homePage.Search_and_sort_product("Balaji_Test_Product");
         homePage.Click_Search_Icon();
 
-        searchResultPage = new SearchResultPage(driver);
+        searchResultPage = new SearchResultPage();
         Assert.assertTrue(searchResultPage.Verify_the_searched_product_IsDisplayed("Balaji_Test_Product"),"Searched Product is not displaying");
         searchResultPage.Click_the_searched_product("Balaji_Test_Product");
 
