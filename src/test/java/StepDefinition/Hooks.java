@@ -8,18 +8,23 @@ import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
+import static ProjectBase.TestBaseClass.*;
+
 public class Hooks {
 
     TestBaseClass testBaseClass = new TestBaseClass();
 
     @Before()
-    public void setup(){
-
-        testBaseClass.SuiteBeforeMethods();
+    public void setup() {
+     //   startAppiumServer();
+     //   startEmulator();
+     //   launchAndroidApp();
+         testBaseClass.SuiteBeforeMethods();
     }
 
     @After()
-    public void teardown(){
+    public void teardown() {
+
         testBaseClass.teardown();
     }
 
