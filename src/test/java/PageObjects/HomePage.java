@@ -10,19 +10,20 @@ import org.testng.annotations.Test;
 
 public class HomePage extends TestBaseClass {
     public HomePage() {
-        PageFactory.initElements(getDriver(),this);
+        PageFactory.initElements(getDriver(), this);
     }
+
     @FindBy(id = "txtSearch")
     private WebElement Search_TextBox;
 
     @FindBy(id = "BtnSearch")
     private WebElement Search_Icon;
 
-    public void Search_and_sort_product(String productName){
-        Web_Clear_and_Type(Search_TextBox,productName);
+    public void Search_and_sort_product(String productName) {
+        Web_Clear_and_Type(Search_TextBox, productName);
     }
 
-    public void Click_Search_Icon(){
+    public void Click_Search_Icon() {
         clickElement(Search_Icon);
     }
 }
