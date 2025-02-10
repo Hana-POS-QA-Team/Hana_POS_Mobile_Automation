@@ -271,7 +271,7 @@ public class TestBaseClass {
             getDriver().quit();
         }
         stopServer();
-        closeEmulator();
+        //closeEmulator();
 
     }
 
